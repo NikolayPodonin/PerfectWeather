@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widgetLocationElementPadding">10dp</dimen>
+    <dimen name="widgetLocationElementMargin">5dp</dimen>
+    <dimen name="widgetLocationNameText">20sp</dimen>
+    <dimen name="widgetLocationDegreesText">35sp</dimen>
+    <dimen name="widgetLocationDegreesSymbol">7sp</dimen>
+</resources>

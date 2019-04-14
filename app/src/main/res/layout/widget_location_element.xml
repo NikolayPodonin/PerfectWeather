@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="@dimen/widgetLocationElementPadding"
+        android:layout_margin="@dimen/widgetLocationElementMargin"
+        android:background="@android:color/white" >
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/verticalGuideline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.66"
+    />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/locationName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/verticalGuideline"
+            app:layout_constraintTop_toTopOf="parent"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="Moscow"
+            android:textSize="@dimen/widgetLocationNameText"
+            android:padding="@dimen/widgetLocationElementPadding"
+    />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/locationParentName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/verticalGuideline"
+            app:layout_constraintTop_toBottomOf="@id/locationName"
+            tools:text="Russia"
+            android:paddingBottom="@dimen/widgetLocationElementPadding"
+            android:paddingStart="@dimen/widgetLocationElementPadding"
+            android:paddingEnd="@dimen/widgetLocationElementPadding"
+    />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/degrees"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/verticalGuideline"
+            app:layout_constraintEnd_toStartOf="@id/degreesCelsius"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/dividerView"
+            tools:text="7"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/widgetLocationDegreesText"
+            android:padding="@dimen/widgetLocationElementPadding"
+    />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/degreesCelsius"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/dividerView"
+            android:text="@string/degreesCelsius"
+            android:textAlignment="viewEnd"
+            android:textSize="@dimen/widgetLocationNameText"
+            android:paddingTop="@dimen/widgetLocationElementPadding"
+            android:paddingEnd="@dimen/widgetLocationElementPadding"
+    />
+
+    <View
+            android:id="@+id/dividerView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/quantum_grey400"
+            app:layout_constraintTop_toBottomOf="@id/locationParentName"
+            android:layout_marginTop="@dimen/widgetLocationElementPadding"
+    />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/weatherInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/verticalGuideline"
+            app:layout_constraintTop_toTopOf="@id/dividerView"
+            tools:text="Влажность 45% | C-B | 36 км.ч"
+            android:padding="@dimen/widgetLocationElementPadding"
+    />
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/weatherLightness"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/verticalGuideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/dividerView"
+            tools:text="Солнечно"
+            android:padding="@dimen/widgetLocationElementPadding"
+    />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

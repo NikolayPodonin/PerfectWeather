@@ -4,7 +4,7 @@ import com.google.android.libraries.places.api.model.Place
 
 class LocationPickerPresenter(private val view: LocationPickerView) {
     fun onPlaceSelected(place: Place) {
-        view.showMessage(place.name ?: "")
+        view.savePlaceId(place.id)
         view.exit()
     }
 

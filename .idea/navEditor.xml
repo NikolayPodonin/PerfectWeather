@@ -19,6 +19,27 @@
                         </option>
                         <option name="myPositions">
                           <map>
+                            <entry key="locationControllerFragment">
+                              <value>
+                                <LayoutPositions>
+                                  <option name="myPosition">
+                                    <Point>
+                                      <option name="x" value="-256" />
+                                      <option name="y" value="38" />
+                                    </Point>
+                                  </option>
+                                  <option name="myPositions">
+                                    <map>
+                                      <entry key="action_locationControllerFragment_to_locationPickerFragment">
+                                        <value>
+                                          <LayoutPositions />
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
+                                </LayoutPositions>
+                              </value>
+                            </entry>
                             <entry key="locationPickerFragment">
                               <value>
                                 <LayoutPositions>

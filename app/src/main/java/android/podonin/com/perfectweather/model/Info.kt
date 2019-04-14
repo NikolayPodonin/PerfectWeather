@@ -6,9 +6,9 @@ data class Info(
     @SerializedName("_h")
     val h: Boolean,
     @SerializedName("def_pressure_mm")
-    val defPressureMm: Int,
+    val defPressureMm: Double,
     @SerializedName("def_pressure_pa")
-    val defPressurePa: Int,
+    val defPressurePa: Double,
     @SerializedName("f")
     val f: Boolean,
     @SerializedName("lat")

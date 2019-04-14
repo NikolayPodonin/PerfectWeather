@@ -6,11 +6,11 @@ data class Forecast(
     @SerializedName("date")
     val date: String,
     @SerializedName("date_ts")
-    val dateTs: Int,
+    val dateTs: Double,
     @SerializedName("hours")
     val hours: List<Any>,
     @SerializedName("moon_code")
-    val moonCode: Int,
+    val moonCode: Double,
     @SerializedName("moon_text")
     val moonText: String,
     @SerializedName("parts")
@@ -24,5 +24,5 @@ data class Forecast(
     @SerializedName("sunset")
     val sunset: String,
     @SerializedName("week")
-    val week: Int
+    val week: Double
 )

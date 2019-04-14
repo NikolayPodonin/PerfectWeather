@@ -8,5 +8,5 @@ data class AccumPrec(
     @SerializedName("3")
     val x3: Double,
     @SerializedName("7")
-    val x7: Int
+    val x7: Double
 )

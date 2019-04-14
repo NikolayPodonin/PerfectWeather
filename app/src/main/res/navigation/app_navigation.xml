@@ -6,7 +6,13 @@
             app:startDestination="@id/navigation">
 
     <navigation android:id="@+id/navigation"
-                app:startDestination="@id/locationPickerFragment">
+                app:startDestination="@id/locationControllerFragment">
+        <fragment android:id="@+id/locationControllerFragment"
+                  android:name="android.podonin.com.perfectweather.view.locationController.LocationControllerFragment"
+                  android:label="LocationControllerFragment">
+            <action android:id="@+id/action_locationControllerFragment_to_locationPickerFragment"
+                    app:destination="@id/locationPickerFragment"/>
+        </fragment>
         <fragment android:id="@+id/locationPickerFragment"
                   android:name="android.podonin.com.perfectweather.view.locationPicker.LocationPickerFragment"
                   android:label="LocationPickerFragment"/>

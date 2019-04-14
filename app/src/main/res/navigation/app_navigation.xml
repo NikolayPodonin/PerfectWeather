@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/app_navigation"
+            app:startDestination="@id/navigation">
+
+    <navigation android:id="@+id/navigation"
+                app:startDestination="@id/locationPickerFragment">
+        <fragment android:id="@+id/locationPickerFragment"
+                  android:name="android.podonin.com.perfectweather.view.locationPicker.LocationPickerFragment"
+                  android:label="LocationPickerFragment"/>
+    </navigation>
+</navigation>

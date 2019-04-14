@@ -5,4 +5,6 @@
     <dimen name="widgetLocationNameText">20sp</dimen>
     <dimen name="widgetLocationDegreesText">35sp</dimen>
     <dimen name="widgetLocationDegreesSymbol">7sp</dimen>
+
+    <dimen name="floatingButtonMargin">20dp</dimen>
 </resources>

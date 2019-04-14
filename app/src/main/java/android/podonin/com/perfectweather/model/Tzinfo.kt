@@ -10,5 +10,5 @@ data class Tzinfo(
     @SerializedName("name")
     val name: String,
     @SerializedName("offset")
-    val offset: Int
+    val offset: Double
 )

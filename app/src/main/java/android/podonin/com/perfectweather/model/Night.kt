@@ -10,39 +10,39 @@ data class Night(
     @SerializedName("daytime")
     val daytime: String,
     @SerializedName("feels_like")
-    val feelsLike: Int,
+    val feelsLike: Double,
     @SerializedName("humidity")
-    val humidity: Int,
+    val humidity: Double,
     @SerializedName("icon")
     val icon: String,
     @SerializedName("polar")
     val polar: Boolean,
     @SerializedName("prec_mm")
-    val precMm: Int,
+    val precMm: Double,
     @SerializedName("prec_period")
-    val precPeriod: Int,
+    val precPeriod: Double,
     @SerializedName("prec_prob")
-    val precProb: Int,
+    val precProb: Double,
     @SerializedName("pressure_mm")
-    val pressureMm: Int,
+    val pressureMm: Double,
     @SerializedName("pressure_pa")
-    val pressurePa: Int,
+    val pressurePa: Double,
     @SerializedName("soil_moisture")
     val soilMoisture: Double,
     @SerializedName("soil_temp")
-    val soilTemp: Int,
+    val soilTemp: Double,
     @SerializedName("temp_avg")
-    val tempAvg: Int,
+    val tempAvg: Double,
     @SerializedName("temp_max")
-    val tempMax: Int,
+    val tempMax: Double,
     @SerializedName("temp_min")
-    val tempMin: Int,
+    val tempMin: Double,
     @SerializedName("temp_water")
-    val tempWater: Int,
+    val tempWater: Double,
     @SerializedName("wind_dir")
     val windDir: String,
     @SerializedName("wind_gust")
     val windGust: Double,
     @SerializedName("wind_speed")
-    val windSpeed: Int
+    val windSpeed: Double
 )
